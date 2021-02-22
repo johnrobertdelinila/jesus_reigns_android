@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Entry"
+    android:checkable="false"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:chipIcon="@drawable/ic_person_black_24dp"
+    android:text="Hello world"
+    android:id="@+id/chip"
+    app:singleLine="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" />

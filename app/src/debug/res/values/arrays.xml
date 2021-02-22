@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ministries" translatable="false">
+        <item>Technical</item>
+        <item>Multimedia</item>
+        <item>Band</item>
+        <item>Vocals</item>
+        <item>Dance</item>
+    </string-array>
+
+</resources>

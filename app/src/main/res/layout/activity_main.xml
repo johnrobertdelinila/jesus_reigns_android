@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:indeterminate="true" />
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:paddingLeft="@dimen/padding_normal_16dp"
+                android:paddingRight="@dimen/padding_normal_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        app:liftOnScroll="true"
+        android:background="@color/colorBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:paddingLeft="@dimen/padding_normal_16dp"
+            android:paddingRight="@dimen/padding_normal_16dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_action_bar_height">
+
+            <TextView
+                android:text="@string/dashboard"
+                android:fontFamily="@font/nunito_bold"
+                android:id="@+id/text_title"
+                android:layout_marginStart="22dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/minimal_black"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                app:civ_border_width="0dp"
+                android:src="@drawable/alerter_ic_notifications"
+                android:clickable="true"
+                android:tint="@color/minimal_black"
+                android:onClick="showNotifications"
+                android:focusable="true"
+                android:padding="4dp"
+                android:id="@+id/notification"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:transitionName="@string/my_profile"
+                android:contentDescription="@string/notification" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_icon"
+                android:layout_centerVertical="true"
+                app:civ_border_width="0dp"
+                android:src="@drawable/ic_baseline_account_circle_24px"
+                android:clickable="true"
+                android:focusable="true"
+                android:tint="@color/minimal_black"
+                android:padding="4dp"
+                android:layout_marginEnd="16dp"
+                android:layout_toStartOf="@+id/notification"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="@string/profile" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:paddingStart="6dp"
+        android:paddingLeft="6dp"
+        android:paddingEnd="6dp"
+        android:paddingRight="6dp"
+        app:title="QR CODE"
+        app:hideOnScroll="true"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:fabAnimationMode="scale"
+        app:fabCradleRoundedCornerRadius="20dp"
+        app:fabCradleMargin="7dp"
+        app:fabAlignmentMode="center"
+        app:backgroundTint="@android:color/white" />
+
+    <!--app:fabAttached="false"-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:id="@+id/fab"
+        android:tint="@color/colorAccentt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/white"
+        app:tint="@color/chipColor"
+        app:srcCompat="@drawable/ic_outline_center_focus_weak_24px"
+        app:layout_anchor="@id/bar"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:elevation="0dp"
+        app:elevation="0dp"
+        android:paddingLeft="@dimen/padding_normal_16dp"
+        android:paddingRight="@dimen/padding_normal_16dp"
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/transparent"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+        app:itemIconTint="@drawable/bottom_navigation_colors"
+        app:itemTextColor="@drawable/bottom_navigation_colors"
+        app:itemRippleColor="@color/colorAccentt"
+        app:itemTextAppearanceActive="@style/BottomNavigationActiveTextStyle"
+        app:itemTextAppearanceInactive="@style/BottomNavigationInactiveTextStyle"
+        app:menu="@menu/main_menu" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

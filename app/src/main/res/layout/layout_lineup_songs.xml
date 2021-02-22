@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="@dimen/padding_dialog_24dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginBottom="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Prelude: "
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@color/black_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/prelude"
+            app:civ_border_width="0dp"
+            android:src="@drawable/ic_add_circle_24px"
+            android:clickable="true"
+            android:tint="@color/black_bottom"
+            android:backgroundTint="@color/black_bottom"
+            android:focusable="true"
+            android:padding="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:transitionName="@string/my_profile"
+            android:contentDescription="@string/notification" />
+
+        <androidx.cardview.widget.CardView
+            app:contentPaddingRight="12dp"
+            app:contentPaddingLeft="12dp"
+            app:contentPaddingTop="6dp"
+            app:cardBackgroundColor="#ebebeb"
+            app:contentPaddingBottom="6dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="12dp"
+            android:visibility="gone"
+            android:id="@+id/card_prelude"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/minimal_black"
+                android:id="@+id/text_prelude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Fellowshipping: "
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@color/black_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fellowshipping"
+            app:civ_border_width="0dp"
+            android:src="@drawable/ic_add_circle_24px"
+            android:clickable="true"
+            android:tint="@color/black_bottom"
+            android:backgroundTint="@color/black_bottom"
+            android:focusable="true"
+            android:padding="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:transitionName="@string/my_profile"
+            android:contentDescription="@string/notification" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_fellowshipping"
+            android:visibility="gone"
+            app:contentPaddingRight="12dp"
+            app:contentPaddingLeft="12dp"
+            app:contentPaddingTop="6dp"
+            app:cardBackgroundColor="#ebebeb"
+            app:contentPaddingBottom="6dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/minimal_black"
+                android:id="@+id/text_fellowshipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Fast Song: "
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@color/minimal_black"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fast_song"
+            app:civ_border_width="0dp"
+            android:src="@drawable/ic_add_circle_24px"
+            android:clickable="true"
+            android:tint="@color/black_bottom"
+            android:backgroundTint="@color/black_bottom"
+            android:focusable="true"
+            android:padding="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:transitionName="@string/my_profile"
+            android:contentDescription="@string/notification" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_fast"
+            android:visibility="gone"
+            app:contentPaddingRight="12dp"
+            app:contentPaddingLeft="12dp"
+            app:contentPaddingTop="6dp"
+            app:cardBackgroundColor="#ebebeb"
+            app:contentPaddingBottom="6dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/minimal_black"
+                android:id="@+id/text_fast_song"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Slow Song: "
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textStyle="bold"
+            android:textColor="@color/minimal_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/slow_song"
+            app:civ_border_width="0dp"
+            android:src="@drawable/ic_add_circle_24px"
+            android:clickable="true"
+            android:tint="@color/black_bottom"
+            android:backgroundTint="@color/black_bottom"
+            android:focusable="true"
+            android:padding="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:transitionName="@string/my_profile"
+            android:contentDescription="@string/notification" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_slow"
+            android:visibility="gone"
+            app:contentPaddingRight="12dp"
+            app:contentPaddingLeft="12dp"
+            app:contentPaddingTop="6dp"
+            app:cardBackgroundColor="#ebebeb"
+            app:contentPaddingBottom="6dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/minimal_black"
+                android:id="@+id/text_slow_song"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Communion\nSong: "
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@color/black_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/communion_song"
+            app:civ_border_width="0dp"
+            android:src="@drawable/ic_add_circle_24px"
+            android:clickable="true"
+            android:tint="@color/black_bottom"
+            android:backgroundTint="@color/black_bottom"
+            android:focusable="true"
+            android:padding="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:transitionName="@string/my_profile"
+            android:contentDescription="@string/notification" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_communion"
+            android:visibility="gone"
+            app:contentPaddingRight="12dp"
+            app:contentPaddingLeft="12dp"
+            app:contentPaddingTop="6dp"
+            app:cardBackgroundColor="#ebebeb"
+            app:contentPaddingBottom="6dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/minimal_black"
+                android:id="@+id/text_communion_song"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:text="CREATE EVENT"
+        android:id="@+id/create_event"
+        android:layout_marginTop="4dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="When is the Activity?"
+            android:layout_marginTop="4dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@color/minimal_black"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_margin="6dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                app:contentPaddingLeft="12dp"
+                app:contentPaddingRight="12dp"
+                app:contentPaddingBottom="6dp"
+                app:contentPaddingTop="6dp"
+                android:id="@+id/select_date_activity"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="12dp"
+                android:clickable="true"
+                app:cardBackgroundColor="#ebebeb"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Select Date"
+                    android:drawableStart="@drawable/ic_calendar_today_24px"
+                    android:textColor="@color/black_bottom"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="4dp"
+                app:contentPaddingLeft="12dp"
+                app:contentPaddingRight="12dp"
+                app:contentPaddingBottom="6dp"
+                app:contentPaddingTop="6dp"
+                android:id="@+id/select_time_activity"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="#ebebeb"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Select Time"
+                    android:drawableStart="@drawable/ic_access_time_24px"
+                    android:textColor="@color/black_bottom"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:text="When is the Rehearsal?"
+            android:layout_marginTop="4dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@color/minimal_black"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_margin="6dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                app:contentPaddingLeft="12dp"
+                app:contentPaddingRight="12dp"
+                app:contentPaddingBottom="6dp"
+                app:contentPaddingTop="6dp"
+                android:id="@+id/select_date_rehearsal"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="#ebebeb"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Select Date"
+                    android:drawableStart="@drawable/ic_calendar_today_24px"
+                    android:textColor="@color/black_bottom"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="4dp"
+                app:contentPaddingLeft="12dp"
+                app:contentPaddingRight="12dp"
+                app:contentPaddingBottom="6dp"
+                app:contentPaddingTop="6dp"
+                android:id="@+id/select_time_rehearsal"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="#ebebeb"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Select Time"
+                    android:drawableStart="@drawable/ic_access_time_24px"
+                    android:textColor="@color/black_bottom"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Invite Person"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/minimal_black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/add_person"
+                app:civ_border_width="0dp"
+                android:src="@drawable/ic_person_add_24px"
+                android:clickable="true"
+                android:tint="@color/black_bottom"
+                android:backgroundTint="@color/black_bottom"
+                android:focusable="true"
+                android:padding="4dp"
+                android:layout_marginStart="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:transitionName="@string/my_profile"
+                android:contentDescription="@string/notification" />
+
+        </LinearLayout>
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.button.MaterialButton
+            android:text="DISMISS EVENT"
+            android:id="@+id/dismiss_event"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="@color/jrm_yellow"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:targetApi="o">
+
+    <item
+        android:id="@+id/dashboard"
+        android:icon="@drawable/ic_dashboard_24px"
+        android:title="@string/dashboard"
+        android:tooltipText="Account"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/songbank"
+        android:icon="@drawable/ic_library_music_24px"
+        android:title="@string/songbank"
+        android:tooltipText="Account"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/invisible"
+        android:enabled="false"
+        android:checkable="false"
+        android:iconTint="@color/transparent"
+        android:title=""
+        android:tooltipText=""
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/calendar"
+        android:icon="@drawable/ic_calendar_today_24px"
+        android:title="@string/calendar"
+        android:tooltipText="Account"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_baseline_account_circle_24px"
+        android:title="@string/profile"
+        android:tooltipText="More"
+        android:checked="true"
+        app:showAsAction="always" />
+</menu>

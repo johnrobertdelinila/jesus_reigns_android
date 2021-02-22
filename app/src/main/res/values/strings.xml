@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">Ministry One</string>
+    <string name="facebook_app_id">535496337311906</string>
+    <string name="fb_login_protocol_scheme">fb535496337311906</string>
+
+    <string name="title_one">Be Updated</string>
+    <string name="title_two">Access your records</string>
+    <string name="title_three">Concentrate Today</string>
+    <string name="title_four">Monitor Status </string>
+    <string name="description_one">Get announcements and access to market events</string>
+    <string name="description_two">Keep track of your ticket transaction without the need for record books</string>
+    <string name="description_three">Be focus on current task</string>
+    <string name="description_four">Observe and keep track of the sectors and stalls </string>
+
+    <string name="main_content_description_implementation_image">implementation image</string>
+    <string name="button_register">Register Here</string>
+    <string name="text_forgot">Forgot Password</string>
+
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="button_login">Login</string>
+    <string name="text_signing_up">Signing up…</string>
+    <string name="text_signing_in">Signing in…</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="update_profile_text">Updating profile…</string>
+
+    <!-- Vertical Stepper Form Layout String Override -->
+    <string name="vertical_form_stepper_form_continue">NEXT</string>
+    <string name="vertical_form_stepper_form_confirm_button">FIND CAUSE</string>
+    <string name="vertical_form_stepper_form_last_step">View Possible Causes</string>
+    <string name="text_result">Getting your result…</string>
+    <string name="wait_text">Please wait…</string>
+
+    <string name="entry_java_title">Java</string>
+    <string name="entry_java_subtitle">Run the MLKit Showcase written in Java.</string>
+    <string name="entry_kotlin_title">Kotlin</string>
+    <string name="entry_kotlin_subtitle">Run the MLKit Showcase written in Kotlin.</string>
+    <string name="mode_odt_live_title">Object Detection: Live Camera</string>
+    <string name="mode_odt_live_subtitle">A device’s live camera can be used to detect objects in an environment.</string>
+    <string name="mode_odt_static_title">Object Detection: Static Image</string>
+    <string name="mode_odt_static_subtitle">One or more objects can be detected from a provided image.</string>
+    <string name="mode_barcode_live_title">Barcode Scanning</string>
+    <string name="mode_barcode_live_subtitle">Read data encoded in most standard barcode formats.</string>
+    <string name="settings_title">Settings</string>
+    <string name="cd_settings_button">Settings</string>
+    <string name="cd_close_button">Back</string>
+    <string name="cd_flash_button">Toggle camera flash</string>
+    <string name="cd_photo_library_button">Upload image</string>
+    <string name="prompt_point_at_an_object">Point your camera at an object</string>
+    <string name="prompt_point_at_a_barcode">Point your camera at a QR code</string>
+    <string name="prompt_hold_camera_steady">Keep camera still for a moment</string>
+    <string name="prompt_move_camera_closer">Move closer to search</string>
+    <string name="prompt_searching">Please wait&#8230; </string>
+    <string name="product_search_button">Search object</string>
+    <plurals name="bottom_sheet_title">
+        <item quantity="one">%d match found</item>
+        <item quantity="other">%d matches found</item>
+    </plurals>
+    <string name="static_image_prompt_detected_no_results">No results found</string>
+    <string name="static_image_prompt_detected_results">Tap on a dot to inspect</string>
+    <string name="static_image_card_no_result_title">No result found</string>
+    <string name="static_image_card_no_result_subtitle">Support text place holder</string>
+    <string name="static_image_preview_card_subtitle">+%d more results</string>
+
+    <!-- Strings for camera settings. -->
+    <string name="pref_category_camera">Camera</string>
+    <string name="pref_key_rear_camera_preview_size" translatable="false">rcpvs</string>
+    <string name="pref_key_rear_camera_picture_size" translatable="false">rcpts</string>
+    <string name="pref_title_rear_camera_preview_size">Rear camera preview size</string>
+
+    <!-- Strings for object detection settings. -->
+    <string name="pref_category_object_detection">Object detection</string>
+    <string name="pref_key_object_detector_enable_multiple_objects" translatable="false">odemo</string>
+    <string name="pref_title_object_detector_enable_multiple_objects">Enable multiple objects</string>
+    <string name="pref_key_object_detector_enable_classification" translatable="false">odec</string>
+    <string name="pref_title_object_detector_enable_classification">Enable classification</string>
+
+    <!-- Strings for product search settings. -->
+    <string name="pref_category_product_search">Product search</string>
+    <string name="pref_key_enable_auto_search" translatable="false">pkeas</string>
+    <string name="pref_title_enable_auto_search">Enable auto search</string>
+    <string name="pref_key_confirmation_time_in_manual_search" translatable="false">ctims</string>
+    <string name="pref_title_confirmation_time_in_manual_search">Confirmation time in manual search</string>
+    <string name="pref_summary_confirmation_time_in_manual_search">Ranges from 100ms to 1000ms</string>
+    <string name="pref_key_confirmation_time_in_auto_search" translatable="false">ctias</string>
+    <string name="pref_title_confirmation_time_in_auto_search">Confirmation time in auto search</string>
+    <string name="pref_summary_confirmation_time_in_auto_search">Ranges from 500ms to 2000ms</string>
+
+    <!-- Strings for barcode detection settings. -->
+    <string name="pref_category_barcode_detection">QR code detection preference</string>
+    <string name="pref_key_barcode_reticle_width" translatable="false">barcode_brw</string>
+    <string name="pref_title_barcode_reticle_width">QR code reticle width</string>
+    <string name="pref_summary_barcode_reticle_width" formatted="false">Relative to the camera view width, ranges from 50% to 95%</string>
+    <string name="pref_key_barcode_reticle_height" translatable="false">barcode_brh</string>
+    <string name="pref_title_barcode_reticle_height">QR code reticle height</string>
+    <string name="pref_summary_barcode_reticle_height" formatted="false">Relative to the camera view height, ranges from 20% to 80%</string>
+    <string name="pref_key_enable_barcode_size_check" translatable="false">barcode_ebsc</string>
+    <string name="pref_title_enable_barcode_size_check">Enable QR code size check</string>
+    <string name="pref_summary_enable_barcode_size_check">Will prompt ticketer to move camera closer if the detected QR code is too small</string>
+    <string name="pref_key_minimum_barcode_width" translatable="false">barcode_mbw</string>
+    <string name="pref_title_minimum_barcode_width">Minimum QR code width</string>
+    <string name="pref_summary_minimum_barcode_width" formatted="false">Relative to the reticle width, ranges from 20% to 80% (only applicable when QR code size check enabled)</string>
+    <string name="pref_key_delay_loading_barcode_result" translatable="false">barcode_dlbr</string>
+    <string name="pref_title_delay_loading_barcode_result">Delay loading barcode result</string>
+    <string name="pref_summary_delay_loading_barcode_result">Will show the loading spinner for 2s</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="songbank">Songbank</string>
+    <string name="calendar">Calendar</string>
+    <string name="profile">Profile</string>
+    <string name="verse_of_the_day">Verse of the Day</string>
+    <string name="notification">notification</string>
+    <string name="my_profile">My Profile</string>
+    <string name="notifications">Notifications</string>
+    <string name="ministry">Ministry</string>
+
+    <string name="policyUrl">https://flycricket.io/ministryone/privacy.html</string>
+    <string name="policyUrl2">https://sites.google.com/lorma.edu/jesusreigns-ministryone/home</string>
+    <string name="termsUrl">https://www.websitepolicies.com/policies/view/wirGt3fh</string>
+
+    <string name="default_notification_channel_id">@string/app_name</string>
+    <string name="updating">Updating profile…</string>
+    <string name="uploading">Uploading new profile picture…</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="one_moment">Just one moment…</string>
+
+</resources>

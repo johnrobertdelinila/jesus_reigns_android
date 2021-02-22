@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendImageActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            app:cardUseCompatPadding="true"
+            android:onClick="SelectImage"
+            app:cardCornerRadius="4dp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+            <FrameLayout
+                android:id="@+id/imageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:maxLines="4"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    fontPath="fonts/bold.ttf"
+                    android:text="Click here to add an image"
+                    android:textColor="#212121"
+                    android:textSize="42sp"
+                    app:minTextSize="18dp"
+                    app:sizeToFit="true" />
+
+                <ImageView
+                    android:id="@+id/imagePreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="PreviewImage"
+                    android:scaleType="centerCrop" />
+
+            </FrameLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_backgtound_grey"
+            android:hint="Enter Message"
+            android:textStyle="bold"
+            android:inputType="textCapSentences|textMultiLine"
+            android:paddingStart="20dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"/>
+
+        <HorizontalScrollView
+            android:id="@+id/tabs"
+            android:scrollbars="none"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/options"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_background"
+                    android:textStyle="bold"
+                    android:text=" Send message "
+                    android:padding="10dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_background"
+                    android:onClick="shareLocation"
+                    android:textStyle="bold"
+                    android:text=" Share location "
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/remove"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_background"
+                    android:onClick="removeAttachment"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:text=" Remove Attachment "
+                    android:padding="10dp"
+                    />
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        app:liftOnScroll="true"
+        android:background="@color/colorBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:paddingLeft="@dimen/padding_normal_16dp"
+            android:paddingRight="@dimen/padding_normal_16dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_action_bar_height">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                app:srcCompat="@drawable/ic_arrow_back_24px"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="4dp"
+                android:id="@+id/back"
+                app:tint="@color/minimal_black"
+                android:onClick="back"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/notification" />
+
+            <TextView
+                android:text="Send Image"
+                android:fontFamily="@font/nunito_bold"
+                android:id="@+id/text_title"
+                android:layout_marginStart="56dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/minimal_black"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

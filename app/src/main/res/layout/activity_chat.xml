@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <RelativeLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:windowSoftInputMode="adjustResize"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/message_layoutt"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/message_layout"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_toStartOf="@+id/currentProfile"
+                    android:hint="Enter Message"
+                    android:id="@+id/input_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/message"
+                        android:windowSoftInputMode="adjustResize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:padding="15dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/currentProfile"
+                    android:layout_centerInParent="true"
+                    android:layout_width="48dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="48dp"
+                    android:src="@drawable/default_user_art_g_2"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/sendNew"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_margin="5dp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_height="wrap_content"
+                    android:text="Send image"
+                    android:onClick="SendPicture"
+                    android:textAllCaps="false"
+                    />
+
+                <Button
+                    android:id="@+id/send"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Reply"
+                    android:enabled="false"
+                    android:textAllCaps="false"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:windowSoftInputMode="adjustResize"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/message_layoutt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/default_item"
+            android:visibility="gone"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_above="@+id/message_layoutt"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:tint="#4CAF50"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@drawable/ic_message_black_24dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:id="@+id/default_title"
+                fontPath="fonts/GoogleSans_Bold.ttf"
+                android:textSize="19sp"
+                android:gravity="center"
+                android:textColor="#313131"
+                android:text="No messages found"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                android:id="@+id/default_text"
+                android:gravity="center"
+                android:text="Messages sent will be shown here. Try to break the ice now!"
+                android:layout_marginStart="25dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:layout_marginEnd="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground"
+        app:liftOnScroll="true">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_action_bar_height"
+            android:paddingLeft="@dimen/padding_normal_16dp"
+            android:paddingRight="@dimen/padding_normal_16dp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/notification"
+                android:focusable="true"
+                android:padding="4dp"
+                android:tint="@color/minimal_black"
+                app:srcCompat="@drawable/ic_arrow_back_24px" />
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="56dp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Message"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textColor="@color/minimal_black"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

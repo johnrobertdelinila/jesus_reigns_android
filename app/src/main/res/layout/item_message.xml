@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/messageImageHolder"
+        android:layout_alignParentEnd="true"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="#ccc"
+        app:cardCornerRadius="18dp"
+        android:layout_margin="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <johnrobert.delinila.jesusreigns.utilities.JRMImageView
+            android:id="@+id/messageImage"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:scaleType="centerCrop"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/replytxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/messageImageHolder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        tools:text="My message"
+        android:background="@drawable/textview_tab_style_blue"
+        android:padding="10dp"
+        android:textColor="#fff" />
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_below="@id/replytxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/default_user_art_g_2"
+            app:civ_border_color="@color/colorPrimaryy"
+            app:civ_border_width="0dp" />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                tools:text="Tim Cook"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF000000"
+                />
+
+            <TextView
+                android:id="@+id/messagetxt"
+                tools:text="Hello there"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/textview_tab_style_black"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

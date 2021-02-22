@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "737148583420",
+    "firebase_url": "https://jesus-reigns-ministries.firebaseio.com",
+    "project_id": "jesus-reigns-ministries",
+    "storage_bucket": "jesus-reigns-ministries.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737148583420:android:deb2723954bcb7e814c679",
+        "android_client_info": {
+          "package_name": "johnrobert.delinila.jesusreigns"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737148583420-g9h3s25v2scfueff6ir2qfqi63a9f8bf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "johnrobert.delinila.jesusreigns",
+            "certificate_hash": "7ef4ad9b2cb5298f578bd178f3a0758bc20938c1"
+          }
+        },
+        {
+          "client_id": "737148583420-qk26gtan1qvpqdlqqlpvl0191u2e7ff8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6yCIYwiopHdaaIMWfwPpJPt2CKUAHlpo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737148583420-qk26gtan1qvpqdlqqlpvl0191u2e7ff8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

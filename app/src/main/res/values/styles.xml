@@ -1,0 +1,84 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorAccentt</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkk</item>
+        <item name="colorAccent">@color/colorAccentt</item>
+        <item name="dialogSheetAccent">@color/colorAccentt</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:statusBarColor">@color/colorBackground</item>
+        <item name="android:colorEdgeEffect" tools:targetApi="lollipop">@color/colorAccentt</item>
+        <item name="android:colorControlActivated" tools:targetApi="lollipop">@color/colorAccentt</item>
+        <item name="colorControlNormal">@color/colorAccentt</item>
+        <item name="android:windowSharedElementReturnTransition" tools:targetApi="lollipop">@transition/default_share</item>
+        <item name="android:textColorPrimary">@color/minimal_black</item>
+    </style>
+
+    <style name="ProfileTheme" parent="AppTheme">
+        <item name="android:statusBarColor">@color/colorBackground</item>
+        <item name="colorPrimary">@color/colorAccentt</item>
+    </style>
+
+    <style name="BarcodeTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccentt</item>
+        <item name="dialogSheetAccent">@color/colorAccentt</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
+
+    <style name="SplashAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryy</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkk</item>
+        <item name="colorAccent">@color/colorAccentt</item>
+        <item name="dialogSheetAccent">@color/colorAccentt</item>
+        <item name="android:windowEnterTransition">@transition/default_window_enter</item>
+        <item name="android:windowReturnTransition">@transition/default_window_return</item>
+        <item name="android:statusBarColor">@color/colorBackground</item>
+    </style>
+
+    <style name="AppTheme.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextAppearance">@style/AppTheme.TextInputLayout.HintText</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColorHint">@color/colorTextSubtitle</item>
+        <item name="boxCornerRadiusTopStart">24dp</item>
+        <item name="boxCornerRadiusTopEnd">24dp</item>
+        <item name="boxCornerRadiusBottomStart">24dp</item>
+        <item name="boxCornerRadiusBottomEnd">24dp</item>
+        <item name="errorTextAppearance">@style/AppTheme.TextInputLayout.Error</item>
+    </style>
+
+    <style name="AppTheme.ExposedDropdownMenu" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="hintTextAppearance">@style/AppTheme.TextInputLayout.HintText</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColorHint">@color/colorTextSubtitle</item>
+        <item name="boxCornerRadiusTopStart">24dp</item>
+        <item name="boxCornerRadiusTopEnd">24dp</item>
+        <item name="boxCornerRadiusBottomStart">24dp</item>
+        <item name="boxCornerRadiusBottomEnd">24dp</item>
+        <item name="errorTextAppearance">@style/AppTheme.TextInputLayout.Error</item>
+    </style>
+
+    <style name="AppTheme.TextInputLayout.Error">
+        <item name="android:textColor">@color/textErrorColor</item>
+    </style>
+
+    <style name="AppTheme.TextInputLayout.HintText" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="BottomNavigationActiveTextStyle">
+        <item name="android:fontFamily">@font/nunito_bold</item>
+    </style>
+
+    <style name="BottomNavigationInactiveTextStyle">
+        <item name="android:fontFamily">@font/nunito_semibold</item>
+    </style>
+
+</resources>

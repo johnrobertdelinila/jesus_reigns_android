@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationsActivity">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:id="@+id/default_item"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_marginBottom="5dp"
+                    android:tint="@color/colorAccentt"
+                    app:srcCompat="@drawable/alerter_ic_notifications"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+                <TextView
+                    android:id="@+id/default_title"
+                    fontPath="fonts/GoogleSans_Bold.ttf"
+                    android:textSize="19sp"
+                    android:gravity="center"
+                    android:textColor="#313131"
+                    android:textStyle="bold"
+                    android:text="No notifications yet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="MissingPrefix" />
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        app:liftOnScroll="true"
+        android:background="@color/colorBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:paddingLeft="@dimen/padding_normal_16dp"
+            android:paddingRight="@dimen/padding_normal_16dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_action_bar_height">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                app:srcCompat="@drawable/ic_arrow_back_24px"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="4dp"
+                android:id="@+id/back"
+                android:tint="@color/minimal_black"
+                android:onClick="back"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/notification" />
+
+            <TextView
+                android:text="@string/notifications"
+                android:fontFamily="@font/nunito_bold"
+                android:id="@+id/text_title"
+                android:layout_marginStart="56dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/minimal_black"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                app:civ_border_width="0dp"
+                android:onClick="clearAll"
+                android:src="@drawable/ic_clear_all_black_24dp"
+                android:clickable="true"
+                android:tint="@color/minimal_black"
+                android:focusable="true"
+                android:padding="4dp"
+                android:id="@+id/notification"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/notification" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

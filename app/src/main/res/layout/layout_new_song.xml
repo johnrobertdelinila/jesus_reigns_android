@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/padding_dialog_24dp"
+    android:paddingBottom="@dimen/padding_dialog_24dp"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_title"
+        style="@style/AppTheme.TextInputLayout"
+        android:hint="Title"
+        app:errorEnabled="true"
+        app:hintEnabled="true"
+        app:hintAnimationEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/AppTheme.TextInputLayout"
+        android:hint="Artist"
+        app:errorEnabled="true"
+        app:hintEnabled="true"
+        app:hintAnimationEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppTheme.ExposedDropdownMenu"
+            android:id="@+id/layout_speed"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            app:errorEnabled="true"
+            app:hintEnabled="true"
+            app:hintAnimationEnabled="true"
+            android:hint="Tempo">
+
+            <AutoCompleteTextView
+                android:id="@+id/filled_exposed_dropdown"
+                android:layout_width="match_parent"
+                android:maxLength="4"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppTheme.ExposedDropdownMenu"
+            android:id="@+id/layout_note"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:hintEnabled="true"
+            app:hintAnimationEnabled="true"
+            android:hint="Key">
+
+            <AutoCompleteTextView
+                android:id="@+id/filled_exposed_dropdown2"
+                android:layout_width="match_parent"
+                android:maxLength="2"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Personal Note"
+        app:errorEnabled="true"
+        app:hintEnabled="true"
+        app:hintAnimationEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/personal_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="4"
+            android:lines="4"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Youtube link"
+        app:errorEnabled="true"
+        app:hintEnabled="true"
+        app:hintAnimationEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/yt_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--<TextView
+        android:id="@+id/submit"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_background_gradient"
+        android:textColor="@color/colorBackground"
+        android:text=" SUBMIT "
+        android:padding="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:textStyle="bold"
+        />-->
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textAllCaps="false"
+        />
+
+</LinearLayout>

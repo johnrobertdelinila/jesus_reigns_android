@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="17dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_apple_music_icon_blk" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:fontFamily="@font/nunito_semibold"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:tint="@color/color_icon_right"
+        android:id="@+id/iconRight"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_navigate_next_24px"
+        android:layout_width="16dp"
+        android:layout_height="16dp" />
+
+</RelativeLayout>
